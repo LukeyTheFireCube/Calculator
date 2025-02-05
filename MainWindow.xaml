@@ -1,0 +1,60 @@
+﻿<Window x:Class="calculator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Calculator" Height="537" Width="400" Background="#FFEEEEEE">
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <TextBox x:Name="Display" FontSize="32" Margin="5" Height="60" 
+                 VerticalContentAlignment="Center" HorizontalAlignment="Stretch" 
+                 TextAlignment="Right" IsReadOnly="True" Background="#FFF" BorderThickness="2" BorderBrush="#666" />
+
+        <Grid Grid.Row="1" Margin="5">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Button Content="AC" Grid.Row="0" Grid.Column="0" Background="#FF6FA7FA" FontSize="20" />
+            <Button Content="+/-" Grid.Row="0" Grid.Column="1" Background="#FF6FA7FA" FontSize="20" />
+            <Button Content="%" Grid.Row="0" Grid.Column="2" Background="#FF6FA7FA" FontSize="20" />
+            <Button Content="÷" Grid.Row="0" Grid.Column="3" Background="#FF6FA7FA" Foreground="White" FontSize="20" />
+
+        
+            <Button Content="7" Grid.Row="1" Grid.Column="0" FontSize="20" />
+            <Button Content="8" Grid.Row="1" Grid.Column="1" FontSize="20" />
+            <Button Content="9" Grid.Row="1" Grid.Column="2" FontSize="20" />
+            <Button Content="×" Grid.Row="1" Grid.Column="3" Background="#FFDED2D2" Foreground="White" FontSize="20" />
+
+            
+            <Button Content="4" Grid.Row="2" Grid.Column="0" FontSize="20" />
+            <Button Content="5" Grid.Row="2" Grid.Column="1" FontSize="20" />
+            <Button Content="6" Grid.Row="2" Grid.Column="2" FontSize="20" />
+            <Button Content="−" Grid.Row="2" Grid.Column="3" Background="#FFDED2D2" Foreground="White" FontSize="20" />
+
+            
+            <Button Content="1" Grid.Row="3" Grid.Column="0" FontSize="20" />
+            <Button Content="2" Grid.Row="3" Grid.Column="1" FontSize="20" />
+            <Button Content="3" Grid.Row="3" Grid.Column="2" FontSize="20" />
+            <Button Content="+" Grid.Row="3" Grid.Column="3" Background="#FFDED2D2" Foreground="White" FontSize="20" />
+
+            
+            <Button Content="0" Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2" FontSize="20" HorizontalAlignment="Stretch" />
+            <Button Content="." Grid.Row="4" Grid.Column="2" FontSize="20" />
+            <Button Content="=" Grid.Row="4" Grid.Column="3" Background="#4CAF50" Foreground="White" FontSize="20" />
+        </Grid>
+    </Grid>
+</Window>
+
